@@ -5,8 +5,8 @@ pipeline {
       steps {
          echo 'building the application...'
          script{
-            def test =2+2 < 5 ? 'goood' :'bad'
-            echo test
+            def test =(2+2 < 5)? 'goood' :'bad'
+            echo "${test}"
          }
       }
    } 
